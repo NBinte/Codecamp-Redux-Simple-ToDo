@@ -1,9 +1,7 @@
-import { FETCH_TODOS, ADD_TODOS, UPDATE_TODOS, REMOVE_TODOS } from "../../actions/types";
+import { FETCH_TODOS, ADD_TODOS, UPDATE_TODOS } from "../../actions/types";
 
 const initialState = {
     tasks: [
-        { id: 1, name: "task1" },
-        { id: 2, name: "task2" }
     ],
     task: {}
 };
@@ -26,11 +24,6 @@ const todosReducer = (state = initialState, action) => {
                 ...state,
                 tasks: action.payload
             };
-
-        // case REMOVE_TODOS:
-        //     return {
-        //         ...state,
-        //     };
 
         default:
             return state;
