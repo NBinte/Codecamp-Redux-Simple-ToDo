@@ -10,8 +10,10 @@ import store from "./components/store";
 const App = () => {
   return (<>
     <Provider store={store}>
-      <TodosForm></TodosForm>
-      <Todos></Todos>
+      <div style={{ textAlign: "center" }}>
+        <TodosForm></TodosForm>
+        <Todos></Todos>
+      </div>
     </Provider>
   </>);
 };
